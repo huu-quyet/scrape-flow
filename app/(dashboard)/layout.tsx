@@ -14,6 +14,7 @@ function layout({ children }: { children: React.ReactNode }) {
                     <div className='flex gap-1 items-center'>
                         <ModeToggle />
                     </div>
+                    ScrapeFlow
                 </header>
                 <Separator />
                 <div className='overflow-auto'>

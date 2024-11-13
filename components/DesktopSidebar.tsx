@@ -1,11 +1,34 @@
 "use client"
 
+import { CoinsIcon, HomeIcon, Layers2Icon, ShieldCheckIcon } from 'lucide-react'
 import React from 'react'
 import { Logo } from './Logo'
 import Link from 'next/link'
 import { buttonVariants } from './ui/button'
 import { usePathname } from 'next/navigation'
-import { routes } from '@/constants'
+
+const routes = [
+    {
+        href: '',
+        label: 'Home',
+        icon: HomeIcon,
+    },
+    {
+        href: 'workflows',
+        label: 'Workflows',
+        icon: Layers2Icon,
+    },
+    {
+        href: 'credentials',
+        label: 'Credentials',
+        icon: ShieldCheckIcon,
+    },
+    {
+        href: 'billing',
+        label: 'Billing',
+        icon: CoinsIcon,
+    }
+]
 
 const DesktopSidebar = () => {
     const pathName = usePathname()
